@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Ipl Score</title>
+       <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='ipl.css')}}">
+</head>
+<body>
+<form method="POST">
+<div class="wrapper">
+    <div class="title">
+      IPL Score Predictor
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>Runs</label>
+          <input type="text" class="input" name="runs">
+       </div>  
+        <div class="inputfield">
+          <label>Overs (above 5)</label>
+          <input type="text" class="input" name="overs">
+       </div>  
+         <div class="inputfield">
+          <label>Wickets</label>
+          <input type="text" class="input" name="wickets">
+       </div>  
+       <div class="inputfield">
+          <label>Runs scored in last 5 overs</label>
+          <input type="text" class="input" name="runslast">
+       </div>  
+        <div class="inputfield">
+          <label>Wickets fallen in last 5 overs</label>
+          <input type="text" class="input" name="wicketslast">
+       </div>
+         <div class="inputfield">
+          <label>Striker</label>
+          <input type="text" class="input" name="striker">
+       </div>
+          <div class="inputfield">
+          <label>Non striker</label>
+          <input type="text" class="input"  name="nonstriker">
+       </div>
+        <div class="inputfield">
+          <label>Batting Team</label>
+          <div class="custom_select">
+            <select name="teamp">
+              <option disabled selected value="" name="playingteam">Select team</option>
+              <option value="csk" name="playingteam">Chennai Super Kings</option>
+              <option value="rcb" name="playingteam">Royal Challengers Banglore</option>
+              <option value="mi" name="playingteam">Mumbai Indians</option>
+              <option value="pbks" name="playingteam">Punjab Kings</option>
+              <option value="dc" name="playingteam">Delhi Capitals</option>
+              <option value="kkr" name="playingteam">Kolkata Knight Riders</option>
+              <option value="rr" name="playingteam">Rajasthan Royals</option>
+              <option value="srh" name="playingteam">Sunrisers Hyderabad</option>
+            </select>
+          </div>
+            <label>Bowling Team</label>
+          <div class="custom_select">
+            <select name="teamb">
+              <option  disabled selected value="" name="bowlingteam">Select team</option>
+              <option value="csk" name="bowlingteam">Chennai Super Kings</option>
+              <option value="rcb" name="bowlingteam">Royal Challengers Banglore</option>
+              <option value="mi" name="bowlingteam">Mumbai Indians</option>
+              <option value="pbks" name="bowlingteam">Punjab Kings</option>
+              <option value="dc" name="bowlingteam">Delhi Capitals</option>
+              <option value="kkr" name="bowlingteam">Kolkata Knight Riders</option>
+              <option value="rr" name="bowlingteam">Rajasthan Royals</option>
+              <option value="srh" name="bowlingteam">Sunrisers Hyderabad</option>
+            </select>
+          </div>
+       </div> 
+      <div class="inputfield">
+        <input type="submit" value="Predict IPL Score" class="btn">
+      </div>
+    </div>
+</div>
+</form>
+</body>
+</html>

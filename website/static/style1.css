@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+background-image: url(team.jpg) ;
+      background-size:1570px 760px;
+background-repeat: no-repeat;
+}
+.box{
+  max-width: 660px;
+  max- height: 1000px;
+  width: 100%;
+  background:#C0C0C0;
+  margin: 300px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  filter: drop-shadow(0 0 0.75rem yellow);
+  padding: 30px;
+}
+.box .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+.box:hover{
+		transform: scale(1.1);
+		background: light yellow;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+		
+	}
